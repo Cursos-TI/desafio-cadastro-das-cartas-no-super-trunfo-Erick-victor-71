@@ -5,6 +5,9 @@ int main(){
     char estado[8];
     char cidade[30], codigo[10];
     float pib, area;
+    float dp, pibper;
+    //dp= densidade populacional
+    //pibper= pib per capita
 
     printf("População:\n");
     scanf("%d", &populacao);
@@ -26,7 +29,14 @@ int main(){
 
     printf("Estado:\n");
     scanf("%s", &estado);
+
+
+    dp = (populacao / area);
+    pibper = (pib / populacao);
+
     printf("Carta1:\n");
+
+
     
     
 
@@ -37,8 +47,8 @@ int main(){
     printf("Código: %s\n", codigo);
     printf("Pib: %f\n", pib);
     printf("Área: %f\n", area);
-
-
+    printf("Densidade populacional: %fhab/km²\n", dp);
+    printf("PIB per Capita: %freais\n", pibper);
 
     printf("População:\n");
     scanf("%d", &populacao);
@@ -60,7 +70,14 @@ int main(){
 
     printf("Estado:\n");
     scanf("%s", &estado);
-    printf("Carta 2:\n");
+
+
+    dp = (populacao / area);
+    pibper = (pib / populacao);
+
+    printf("Carta2:\n");
+
+
     
     
 
@@ -71,6 +88,9 @@ int main(){
     printf("Código: %s\n", codigo);
     printf("Pib: %f\n", pib);
     printf("Área: %f\n", area);
+    printf("Densidade populacional: %fhab/km²\n", dp);
+    printf("PIB per Capita: %freais\n", pibper);
+
 
 
     return 0;
